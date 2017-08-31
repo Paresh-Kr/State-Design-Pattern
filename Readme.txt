@@ -11,8 +11,8 @@ ant -buildfile src/build.xml all
 -----------------------------------------------------------------------
 ## To run by specifying arguments from command line 
 ## We will use this to run your code
-ant -buildfile src/build.xml run -Darg0=FIRST -Darg1=SECOND -Darg2=THIRD
 
+ant -buildfile src/build.xml run -Darg0=input.txt  -Darg1=output.txt
 -----------------------------------------------------------------------
 
 ## To create tarball for submission
@@ -35,9 +35,26 @@ offense.”
 
 Provide justification for Data Structures used in this assignment in
 term of Big O complexity (time and/or space)
-
+ 
+As there is no Iteration ,code used file process and invoking function using object of class. Time complexity O(N).
 -----------------------------------------------------------------------
 
 Provide list of citations (urls, etc.) from where you have taken code
 (if any).
 
+------------------------------------------------------
+Code :--
+   I design user input for different Operation as below:-
+     Input                Oeration :-
+      0-9                  Button with 0-9 value
+      10                   for Set/Start button
+      11                   Cancel/Start
+      12                   Set Clock
+      
+
+ As file reading one by one input and problem state asked for operation with input. Designed project with each operation execute sequential order. After setting time 
+  and pressing start .Still Cooking time end , other operation can't execute . Parralelly both can be done using multithread .
+  
+  
+  
+  

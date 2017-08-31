@@ -1,5 +1,6 @@
 package microwaveOven.driver;
 
+import microwaveOven.service.SetStartStateImpl;
 import microwaveOven.util.FileProcessor;
 
 public class Driver 
@@ -7,8 +8,9 @@ public class Driver
 
 	public static void main(String[] args) 
 	{
-		System.out.println(" Microwave Oven ");
-		FileProcessor fp = null;
+		System.out.println(" ----------Assignment-2 ------  ");
+
+		System.out.println("##########Microwave Oven ############");
 		if(args.length <1)
 		{
 			System.out.println("Please provide Input file");
@@ -19,14 +21,15 @@ public class Driver
 			System.exit(1);
 		}else if(args.length ==1 || args.length==2)
 		{
-			 fp= new FileProcessor(args[0],args[1]);
+			// fp= new FileProcessor(args[0],args[1]);
+			SetStartStateImpl sssi= new SetStartStateImpl(args[0],args[1]);
+			sssi.ReadValue();
 
 		}
-		//String st1 = "Hello";
-		//String st2 = "Where there is will, there is a way";
-		//Results rslt=new Results();
-		//rslt.storeNewResult(st1);
-		//rslt.storeNewResult(st2);
+		 
+		
+		
+		
 		//
 		//
 	}
